@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<!-- github.com/KarinMarie/ -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+    <link href="Imagens/favicon.png" rel="icon" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="CSS/normalize.css" rel="stylesheet">
+
+    <link href="CSS/style.css" rel="stylesheet">
+
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h2>
+            <a href="https://sites.google.com/view/lp32019/cert1?authuser=0" target="_blank"><img src="Imagens/title.gif" alt="título Cadastro GIF"></a>
+        </h2>
+        <div class="secao_audio">
+            <audio controls>
+              <source src="song.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </header>
+
+    <div class="wrap">
+        <div class="content">
+
+            <article>
+                <h1>Cadastre-se!</h1>
+                <br>
+
+                <form action="" method="post">
+
+                    <label>
+                        <strong>Nome:</strong><br>
+                        <input type="text" name ="nome" id="nome">
+                    </label>
+                    <br><br>
+
+                    <label>
+                        <strong>Idade:</strong><br>
+                        <input type="number" name ="idade" min="12" max="25" placeholder="12">
+                    </label>
+                    <br><br>
+
+                    <label>
+                        <strong>Data de Nascimento:</strong><br>
+                        <input type="date" name ="data_nascimento" id="data_nascimento" min="1994-04-01" max="2007-04-01">
+                    </label>
+                    <br><br>
+
+                    <label>
+                        <strong>E-mail:</strong><br>
+                        <input type="email" name ="email" id ="email">
+                    </label>
+                    <br><br>
+
+                    <label>
+                        <strong>Site favorito:</strong><br>
+                        <input type="url" name ="site_favorito" id ="site_favorito">
+                    </label>
+                    <br>
+
+                    <p><strong>Curso:</strong></p>
+                    <label>
+                        <input type="radio" name="curso" value="Informática" id="infoCurso"> Informática
+                    </label><br>
+                    <label>
+                        <input type="radio" name="curso" value="Meio-Ambiente" id="maCurso"> Meio-Ambiente
+                    </label>
+                    <br>
+
+                    <p><strong>Aulas:</strong></p>
+                    <label>
+                        <input type="checkbox" name="aulas[]" value="Português" id="check1"> Português
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="aulas[]" value="Inglês Técnico" id="check2"> Inglês Técnico
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="aulas[]" value="Matemática" id="check3"> Matemática
+                    </label>
+                    <br><br>
+
+                    <label>
+                        <strong>Turma:</strong><br>
+                        <select name="turma">
+                            <option value="IN310">IN310</option>
+                            <option value="IN312">IN312</option>
+                        </select>
+                    </label>
+                    <br><br>
+
+                    <label>
+                        <strong>Foto:</strong><br>
+                        <input type="file" name="foto" id="foto" accept="image/png, image/jpeg">
+                    </label>
+                    <br><br>
+
+                    <label>
+                        <strong>Observação:</strong><br>
+                        <textarea name="observacao" id="observacao"></textarea>
+                    </label>
+                    <br><br>
+
+                    <label>
+                        <strong>Nome de Usuário:</strong><br>
+                        <input type="text" name ="nome_usuario">
+                    </label>
+                    <br><br>
+
+                    <label>
+                        <strong>Senha:</strong><br>
+                        <input type="password" name ="senha">
+                    </label>
+                    <br><br><br>
+
+                    <input type="reset" name="limpar" value="Limpar">
+                    <input type="button" name="enviar" value="Enviar" onclick="CamposPreenchidos()">
+
+                </form>
+            </article>
+
+            <aside>
+                <h2>Campos preenchidos:</h2>
+                <p id="nomeTexto"></p>
+                <p id="dataNasc"></p>
+                <p id="emailTexto"></p>
+                <p id="siteTexto"></p>
+                <p id="cursoTexto"></p>
+                <p id="aulasTexto"></p>
+                <p id="fotoTexto"></p>
+                <p id="obsTexto"></p>
+            </aside>
+        </div>
+
+        <footer>
+            <p>&copy Karin Marie, 2021.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

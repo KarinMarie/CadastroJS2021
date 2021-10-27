@@ -1,0 +1,242 @@
+/* github.com/KarinMarie/ */
+
+/* Start https://www.cursors-4u.com */
+
+* {
+    cursor: url(https://cur.cursors-4u.net/anime/ani-11/ani1074.cur), auto !important;
+}
+
+
+/* End https://www.cursors-4u.com */
+
+
+/*== CORPO ==*/
+
+body {
+    background-image: url("../Imagens/background.gif");
+    background-size: 80px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 22px;
+}
+
+.wrap,
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*== CABEÇALHO ==*/
+
+header {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    background-color: rgba(255, 209, 231, 0.877);
+    padding-top: 7px;
+}
+
+header h2 a {
+    width: 80%;
+}
+
+header h2 a img {
+    /* prevenir a imagem de ser arrastada */
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+header h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/*== ÁUDIO ==*/
+
+.secao_audio {
+    background-color: rgba(255, 255, 255, 0.774);
+    padding-top: 5px;
+}
+
+.secao_audio audio {
+    width: 90%;
+}
+
+
+/*== TEXTAREA ==*/
+
+textarea {
+    resize: none;
+    width: 80%;
+    height: 100px;
+}
+
+
+/*== FONTE ==*/
+
+.texto-pequeno {
+    color: rgba(65, 65, 65, 1);
+}
+
+strong {
+    color: rgb(255, 52, 154);
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+h1,
+h2 {
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+article h1 {
+    margin: 0;
+}
+
+
+/*== AJUSTAR COLUNAS E RODAPÉ==*/
+
+article,
+aside,
+footer {
+    text-align: center;
+    background-color: rgba(255, 209, 231, 0.877);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+
+/*== AJUSTAR BOTÕES ==*/
+
+input,
+select,
+textarea {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(255, 244, 207);
+    text-align: center;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 2px solid black;
+    background-color: rgb(255, 207, 249);
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: rgb(255, 112, 236);
+}
+
+input[type="submit"]:active,
+input[type="button"]:active {
+    background-color: white;
+    color: rgb(255, 112, 236);
+}
+
+input[type="file"] {
+    width: 80%;
+}
+
+
+/*== AJUSTAR MENU DE NAVEGAÇÃO ==*/
+
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:active {
+    color: rgb(255, 112, 236);
+    font-weight: bold;
+}
+
+nav p {
+    margin-top: 0;
+}
+
+
+/* ATENÇÃO: NÃO USAR MIN-DEVICE-WIDTH PRA PODER TER O MESMO RESULTADO NO RESIZE DO BROWSER */
+
+
+/*== MEDIA QUERIES ==*/
+
+@media screen and (orientation: landscape) {
+    body {
+        font-size: 30px;
+    }
+}
+
+@media print {
+    body {
+        font-size: 16px;
+    }
+    header h2 a img {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 25px;
+    }
+    header h2 a img {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 25px;
+    }
+    .wrap {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .content {
+        overflow: auto;
+        /* não fazer o rodapé fluturar! */
+    }
+    header h2 a img {
+        width: 400px;
+    }
+    .secao_audio audio {
+        width: 70%;
+    }
+    article {
+        width: 50%;
+        float: left;
+    }
+    aside {
+        width: 30%;
+        float: right;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .wrap {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .secao_audio audio {
+        width: 50%;
+    }
+}
